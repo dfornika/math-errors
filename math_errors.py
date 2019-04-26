@@ -20,7 +20,7 @@ class TestMathErrors(unittest.TestCase):
 
     def test_02(self):
         x = 0
-        for i in range(56):
+        for i in range(11):
             x += i
         answer = 55
         self.assertEqual(x, answer)
