@@ -10,7 +10,7 @@ class TestMathErrors(unittest.TestCase):
     
     def test_00(self):
         x = 1 + 1
-        answer = 1
+        answer = 2
         self.assertEqual(x, answer)
 
     def test_01(self):
