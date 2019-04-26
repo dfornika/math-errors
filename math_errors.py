@@ -10,29 +10,29 @@ class TestMathErrors(unittest.TestCase):
     
     def test_00(self):
         x = 1 + 1
-        answer = 1
+        answer = 2
         self.assertEqual(x, answer)
 
     def test_01(self):
         x = 100 / 2
-        answer = 200
+        answer = 50
         self.assertEqual(x, answer)
 
     def test_02(self):
         x = 0
         for i in range(10):
             x += i
-        answer = 55
+        answer = 45
         self.assertEqual(x, answer)
         
     def test_03(self):
         x = 3 + 2 + 3 / 4.
-        answer = 2
+        answer = 23/4
         self.assertEqual(x, answer)
 
     def test_04(self):
         x = 2 ** 8
-        answer = 16
+        answer = 256
         self.assertEqual(x, answer)
 
     def test_05(self):
@@ -42,7 +42,7 @@ class TestMathErrors(unittest.TestCase):
             'cheese': 8.10,
         }
         x = sum(grocery_list.values())
-        answer = 17.10
+        answer = 18.10
         self.assertEqual(x, answer)
             
 if __name__ == '__main__':
