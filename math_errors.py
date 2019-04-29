@@ -9,12 +9,12 @@ class TestMathErrors(unittest.TestCase):
     """
     
     def test_00(self):
-        x = 1 + 1
+        x = 0 + 1
         answer = 1
         self.assertEqual(x, answer)
 
     def test_01(self):
-        x = 100 / 2
+        x = 400 / 2
         answer = 200
         self.assertEqual(x, answer)
 
@@ -26,12 +26,12 @@ class TestMathErrors(unittest.TestCase):
         self.assertEqual(x, answer)
         
     def test_03(self):
-        x = 3 + 2 + 3 / 4.
+        x = (3 + 2 + 3) / 4.
         answer = 2
         self.assertEqual(x, answer)
 
     def test_04(self):
-        x = 2 ** 8
+        x = 2 ** 4
         answer = 16
         self.assertEqual(x, answer)
 
@@ -39,7 +39,7 @@ class TestMathErrors(unittest.TestCase):
         grocery_list = {
             'eggs': 6.72,
             'bread': 3.28,
-            'cheese': 8.10,
+            'cheese': 7.10,
         }
         x = sum(grocery_list.values())
         answer = 17.10
